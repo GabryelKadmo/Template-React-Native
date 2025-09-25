@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# Template React Native com Expo �
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um template limpo para projetos React Native usando [Expo](https://expo.dev) e [Expo Router](https://expo.dev/router).
 
-## Get started
+## 🚀 Começando
 
-1. Install dependencies
-
+1. **Instale as dependências**
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. **Inicie o projeto**
    ```bash
-   npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+3. **Execute em diferentes plataformas**
+   - Android: `npm run android`
+   - iOS: `npm run ios` 
+   - Web: `npm run web`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📁 Estrutura do Projeto
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+```
+app/
+├── (tabs)/
+│   ├── _layout.tsx     # Layout das abas
+│   ├── index.tsx       # Tela inicial
+│   └── explore.tsx     # Segunda aba
+├── _layout.tsx         # Layout principal
+└── modal.tsx           # Exemplo de modal
 
-## Get a fresh project
+components/
+├── themed-text.tsx     # Componente de texto com tema
+├── themed-view.tsx     # Componente de view com tema
+└── ui/                 # Componentes de UI
 
-When you're ready, run:
+constants/
+└── theme.ts           # Configurações de tema
 
-```bash
-npm run reset-project
+hooks/
+├── use-color-scheme.ts # Hook para tema claro/escuro
+└── use-theme-color.ts  # Hook para cores do tema
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🎨 Funcionalidades Incluídas
 
-## Learn more
+- ✅ **Expo Router** - Navegação baseada em arquivos
+- ✅ **TypeScript** - Tipagem estática
+- ✅ **Tema Claro/Escuro** - Suporte automático
+- ✅ **Componentes Temáticos** - ThemedText e ThemedView
+- ✅ **ESLint** - Linting configurado
+- ✅ **Estrutura Organizada** - Pastas bem definidas
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🛠️ Tecnologias
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Expo SDK ~54.0](https://expo.dev/)
+- [React Native](https://reactnative.dev/)
+- [Expo Router](https://expo.dev/router)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Navigation](https://reactnavigation.org/)
 
-## Join the community
+## 📚 Recursos Úteis
 
-Join our community of developers creating universal apps.
+- [Documentação do Expo](https://docs.expo.dev/)
+- [Expo Router Docs](https://expo.dev/router)
+- [React Native Docs](https://reactnative.dev/docs/getting-started)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 📝 Scripts Disponíveis
+
+- `npm run start` - Inicia o servidor de desenvolvimento
+- `npm run android` - Executa no Android
+- `npm run ios` - Executa no iOS
+- `npm run web` - Executa no navegador
+- `npm run lint` - Executa o linting
